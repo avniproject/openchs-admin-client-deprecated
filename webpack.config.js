@@ -38,6 +38,10 @@ module.exports = {
     },
     devServer: {
         contentBase: './dist',
+        proxy: [{
+            context: ["/forms" ],
+            target: "http://localhost:8021"
+        }]
     },
     module: {
         rules: [
