@@ -4,6 +4,7 @@
   "description": "OpenCHS admin",
   "private": true,
   "dependencies": {
+    "ajv": "^6.5.0",
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
     "babel-eslint": "7.2.3",
@@ -107,14 +108,14 @@
     "copyfiles": "^1.2.0",
     "css-loader": "^0.28.5",
     "enzyme": "^2.9.1",
-    "extract-text-webpack-plugin": "^2.1.2",
+    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^0.11.2",
     "jest": "^20.0.4",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.9.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
-    "url-loader": "^0.5.9",
-    "webpack": "^3.5.5",
+    "url-loader": "^1.0.1",
+    "webpack": "^3.12.0",
     "webpack-dev-server": "^2.7.1"
   }
 }
