@@ -56,6 +56,7 @@ class FormDetails extends Component {
             headers: {
                 Accept: 'application/json',
                 'Content-Type': 'application/json',
+                'ORGANISATION-NAME': 'OpenCHS'
             },
             body: JSON.stringify(form),
         })

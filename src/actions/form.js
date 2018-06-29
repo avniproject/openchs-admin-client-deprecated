@@ -11,7 +11,8 @@ export function fetchGroups(formName, uuid, callback) {
         console.log(`/forms/export?formUUID=${uuid}`);
         return fetch(`/forms/export?formUUID=${uuid}`, {
             credentials: 'include',
-            Accept: 'application/json'
+            Accept: 'application/json',
+            headers: { "ORGANISATION-NAME": "OpenCHS" }
         })
             .then((response) => {
                 if (response.status >= 200 && response.status < 300) {

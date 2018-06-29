@@ -15,7 +15,8 @@ class Forms extends Component {
             {
                 method: 'GET',
                 credentials: 'include',
-                Accept: 'application/json'})
+                Accept: 'application/json',
+                headers: { "ORGANISATION-NAME": "OpenCHS" }})
             .then((response) => {
                 if (response.status >= 200 && response.status < 300) {
                     return response.json();
